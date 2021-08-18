@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HngStage2Assingment</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="submit">Submit</string>
+    <string name="user_image">User Image</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="load_image_from_gallery">Load Image From Gallery</string>
+</resources>
