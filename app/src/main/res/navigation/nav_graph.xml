@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inputPage">
 
+    <fragment
+        android:id="@+id/inputPage"
+        android:name="com.example.hngstage2assingment.InputPage"
+        android:label="fragment_input_page"
+        tools:layout="@layout/fragment_input_page" >
+        <action
+            android:id="@+id/action_inputPage_to_outputPage"
+            app:destination="@id/outputPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/outputPage"
+        android:name="com.example.hngstage2assingment.OutputPage"
+        android:label="fragment_output_page"
+        tools:layout="@layout/fragment_output_page" >
+        <action
+            android:id="@+id/action_outputPage_to_inputPage"
+            app:destination="@id/inputPage" />
+        <argument
+            android:name="newlyRegisteredUser"
+            app:argType="com.example.hngstage2assingment.UserClass" />
+    </fragment>
 </navigation>
